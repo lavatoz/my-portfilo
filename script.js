@@ -112,9 +112,32 @@ if (contactForm) {
             btn.classList.add('button--primary'); // Ensure primary style
             contactForm.reset();
 
+            // Show Modal
+            const modal = document.getElementById('confirmation-modal');
+            modal.classList.add('active');
+
             setTimeout(() => {
                 btn.innerHTML = originalContent;
             }, 3000);
         }, 1500); // 1.5s delay to simulate network/wait for iframe load
+    });
+}
+
+/* Modal Close Logic */
+const modal = document.getElementById('confirmation-modal');
+const modalClose = document.getElementById('modal-close');
+
+if (modalClose) {
+    modalClose.addEventListener('click', () => {
+        modal.classList.remove('active');
+    });
+}
+
+// Close modal when clicking outside
+if (modal) {
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+        }
     });
 }
