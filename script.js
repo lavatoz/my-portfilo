@@ -2,7 +2,7 @@
 const cursorDot = document.querySelector('[data-cursor-dot]');
 const cursorOutline = document.querySelector('[data-cursor-outline]');
 
-window.addEventListener('mousemove', function(e) {
+window.addEventListener('mousemove', function (e) {
     const posX = e.clientX;
     const posY = e.clientY;
 
@@ -21,11 +21,11 @@ const navToggle = document.getElementById('nav-toggle');
 const navList = document.getElementById('nav-list');
 const navLinks = document.querySelectorAll('.nav-link');
 
-if(navToggle) {
+if (navToggle) {
     navToggle.addEventListener('click', () => {
         navList.classList.toggle('show-menu');
         const icon = navToggle.querySelector('i');
-        if(navList.classList.contains('show-menu')){
+        if (navList.classList.contains('show-menu')) {
             icon.classList.remove('fa-bars');
             icon.classList.add('fa-times');
         } else {
@@ -51,12 +51,12 @@ const scrollActive = () => {
 
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight,
-              sectionTop = current.offsetTop - 58,
-              sectionId = current.getAttribute('id'),
-              sectionsClass = document.querySelector('.nav-list a[href*=' + sectionId + ']');
+            sectionTop = current.offsetTop - 58,
+            sectionId = current.getAttribute('id'),
+            sectionsClass = document.querySelector('.nav-list a[href*=' + sectionId + ']');
 
-        if(sectionsClass) {
-            if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
+        if (sectionsClass) {
+            if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
                 sectionsClass.classList.add('active-link');
             } else {
                 sectionsClass.classList.remove('active-link');
@@ -97,17 +97,24 @@ revealOnScroll();
 
 /* Contact Form Handling */
 const contactForm = document.querySelector('#contact-form');
-if(contactForm) {
+if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        // Simulate sending
+        // e.preventDefault(); // Removed to allow submission to iframe
+
+        // Show loading/success state
         const btn = contactForm.querySelector('button');
         const originalContent = btn.innerHTML;
-        btn.innerHTML = '<i class="fas fa-check"></i> Sent Successfully';
-        btn.classList.add('button--primary');
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+        // Reset after a delay (assuming success since we can't easily check iframe cross-origin)
         setTimeout(() => {
-            btn.innerHTML = originalContent;
+            btn.innerHTML = '<i class="fas fa-check"></i> Sent Successfully';
+            btn.classList.add('button--primary'); // Ensure primary style
             contactForm.reset();
-        }, 3000);
+
+            setTimeout(() => {
+                btn.innerHTML = originalContent;
+            }, 3000);
+        }, 1500); // 1.5s delay to simulate network/wait for iframe load
     });
 }
