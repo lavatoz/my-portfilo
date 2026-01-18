@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Joel Abin - SOC Operations & Cyber Forensics Specialist">
+    <title>Joel Abin | Cyber Security Specialist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#" class="logo">JOEL<span class="highlight">.PORTFOLIO</span></a>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li class="nav-item"><a href="#home" class="nav-link active-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link contact-btn">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="hero-container container grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-shield-alt"></i> Cyber Security Specialist
+                    </div>
+                    <h1 class="hero-title">
+                        Hello, I'm <br>
+                        <span class="gradient-text">Joel Abin</span>
+                    </h1>
+                    <h2 class="hero-subtitle">SOC Operations | Cyber Forensics</h2>
+                    <p class="hero-description">
+                        Securing the digital frontier through advanced threat detection,
+                        penetration testing, and forensic analysis.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="button button--primary">
+                            View Projects <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="button button--ghost">
+                            Contact Me
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/joel-abin" target="_blank" class="social-link"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/lavatoz" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:joelabin854796@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://tryhackme.com/p/joelabin854796" target="_blank" class="social-link"
+                            aria-label="TryHackMe">
+                            <i class="fas fa-terminal"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="security-shield-viz">
+                        <div class="shield-layer layer-1"></div>
+                        <div class="shield-layer layer-2"></div>
+                        <div class="shield-layer layer-3"></div>
+                        <i class="fas fa-lock shield-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#about" class="scroll-link">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Who I Am</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                <div class="about-container grid">
+                    <div class="about-data">
+                        <p class="about-text">
+                            I am a motivated and detail-oriented BCA student specializing in cybersecurity,
+                            cloud computing, and ethical hacking. My expertise lies in <strong class="highlight">SIEM,
+                                incident detection, network forensics, penetration testing, and reverse
+                                engineering.</strong>
+                        </p>
+                        <p class="about-text">
+                            With a strong understanding of security tools like Wireshark, Burp Suite, and Autopsy,
+                            I have demonstrated my skills through CTF competitions (2nd Place Winner), security labs
+                            on TryHackMe & HackTheBox, and practical security projects. I am eager to contribute
+                            to a challenging SOC environment.
+                        </p>
+
+                        <p class="about-text">
+                            I hold a <strong>BCA with IBM (Cyber Security)</strong> from Yenepoya University and am
+                            based in <strong>Kerala, India</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications section" id="certifications">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Achievements</span>
+                    <h2 class="section-title">Certifications</h2>
+                </div>
+
+                <div class="certifications-container grid">
+                    <div class="certification-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 class="cert-title">CTF Cybersecurity Competition</h3>
+                        <span class="cert-subtitle">2nd Place Winner</span>
+                        <a href="https://drive.google.com/file/d/1pARvDhgMVscPOvoXYR4cjusP23uapzx-/view?usp=sharing"
+                            target="_blank" class="button button--ghost button--small">
+                            View Certificate <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="certification-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="cert-title">Multi-Factor Authentication Project</h3>
+                        <span class="cert-subtitle">Completion Certificate</span>
+                        <a href="https://drive.google.com/file/d/1OJveaH6mEQhX0OVBVaCskS717fMrmRTI/view?usp=sharing"
+                            target="_blank" class="button button--ghost button--small">
+                            View Certificate <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="certification-card">
+                        <div class="cert-icon">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <h3 class="cert-title">Google Cybersecurity Professional</h3>
+                        <span class="cert-subtitle">Coursera</span>
+                        <a href="https://drive.google.com/file/d/1BypF0jYbAK2PVzJZe5jJr-GINtR_GF_E/view?usp=sharing"
+                            target="_blank" class="button button--ghost button--small">
+                            View Certificate <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="certification-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3 class="cert-title">Ethical Hacker</h3>
+                        <span class="cert-subtitle">Cisco Networking Academy</span>
+                        <a href="https://drive.google.com/file/d/1N2tmZ4JbNwZr1YYrqmoawmb572hVpC8j/view?usp=sharing"
+                            target="_blank" class="button button--ghost button--small">
+                            View Certificate <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">My Expertise</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                </div>
+
+                <div class="skills-container grid">
+                    <!-- Cyber Forensics -->
+                    <div class="skills-card">
+                        <div class="skills-header">
+                            <i class="fas fa-search-location skills-icon"></i>
+                            <h3 class="skills-title">Cyber Forensics</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><i class="fas fa-check-circle"></i> File System Analysis</li>
+                            <li><i class="fas fa-check-circle"></i> Autopsy</li>
+                            <li><i class="fas fa-check-circle"></i> Network Traffic Capture</li>
+                            <li><i class="fas fa-check-circle"></i> Volatile Memory Analysis</li>
+                        </ul>
+                    </div>
+
+                    <!-- Penetration Testing -->
+                    <div class="skills-card">
+                        <div class="skills-header">
+                            <i class="fas fa-bug skills-icon"></i>
+                            <h3 class="skills-title">Penetration Testing</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><i class="fas fa-check-circle"></i> Web App Testing</li>
+                            <li><i class="fas fa-check-circle"></i> Network Penetration</li>
+                            <li><i class="fas fa-check-circle"></i> Burp Suite</li>
+                            <li><i class="fas fa-check-circle"></i> Metasploit Framework</li>
+                        </ul>
+                    </div>
+
+                    <!-- SOC Operations -->
+                    <div class="skills-card">
+                        <div class="skills-header">
+                            <i class="fas fa-satellite-dish skills-icon"></i>
+                            <h3 class="skills-title">SOC Operations</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><i class="fas fa-check-circle"></i> SIEM & Monitoring</li>
+                            <li><i class="fas fa-check-circle"></i> Threat Detection</li>
+                            <li><i class="fas fa-check-circle"></i> Log Management</li>
+                            <li><i class="fas fa-check-circle"></i> Wireshark Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">My Work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+
+                <div class="projects-container">
+                    <article class="project-card">
+                        <div class="project-content">
+                            <span class="project-date">GitHub Project</span>
+                            <h3 class="project-title">HOTELO</h3>
+                            <p class="project-description">
+                                A hotel management system aimed at streamlining operations.
+                                Check out the source code and implementation details on GitHub.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Hotel Management</span>
+                                <span class="tag">Web Development</span>
+                                <span class="tag">System Design</span>
+                            </div>
+                            <br>
+                            <a href="https://github.com/lavatoz/HOTELO.git" target="_blank"
+                                class="button button--all-projects">
+                                View Code <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="project-visual status-success">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <span class="project-date">09/2024 - 11/2024</span>
+                            <h3 class="project-title">Multi-Factor Authentication System</h3>
+                            <p class="project-description">
+                                Developed and implemented a comprehensive Multi-Factor Authentication (MFA) system
+                                during a program at Pheme Software Pvt. Ltd. Applied knowledge of enterprise security
+                                implementation to secure user access.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Access Control</span>
+                                <span class="tag">Security Implementation</span>
+                                <span class="tag">Authentication</span>
+                            </div>
+                        </div>
+                        <div class="project-visual status-success">
+                            <i class="fas fa-shield-virus"></i>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">What I Offer</span>
+                    <h2 class="section-title">Services</h2>
+                </div>
+
+                <div class="services-container grid">
+                    <div class="service-card">
+                        <span class="service-number">01</span>
+                        <h3 class="service-title">Vulnerability Assessment</h3>
+                        <p class="service-description">
+                            Identifying and quantifying security vulnerabilities in an environment.
+                            Basic application and network scanning.
+                        </p>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card">
+                        <span class="service-number">02</span>
+                        <h3 class="service-title">Security Monitoring</h3>
+                        <p class="service-description">
+                            Continuous monitoring of networks for suspicious activity and potential threats
+                            using standard SIEM tools.
+                        </p>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card">
+                        <span class="service-number">03</span>
+                        <h3 class="service-title">Incident Response</h3>
+                        <p class="service-description">
+                            Analyzing security incidents to determine the root cause and providing
+                            recommendations for remediation.
+                        </p>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta section">
+            <div class="cta-container container">
+                <div class="cta-content text-center">
+                    <h2 class="cta-title">Ready to secure your digital assets?</h2>
+                    <p class="cta-description">
+                        Let's collaborate to build a safer and more secure environment for your business.
+                    </p>
+                    <a href="#contact" class="button button--primary button--large">
+                        Start a Conversation
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact Me</h2>
+                </div>
+
+                <div class="contact-container grid">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <h3 class="contact-card-title">Email</h3>
+                            <a href="mailto:joelabin854796@gmail.com" class="contact-data">joelabin854796@gmail.com</a>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <h3 class="contact-card-title">Phone</h3>
+                            <a href="tel:+918660674497" class="contact-data">+91 8660674497</a>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <h3 class="contact-card-title">Location</h3>
+                            <span class="contact-data">Kerala, India</span>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" class="form-input" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" class="form-input" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" class="form-input form-area" placeholder="How can I help you?"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="button button--primary">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <h2 class="footer-title">JOEL<span class="highlight">.PORTFOLIO</span></h2>
+            <ul class="footer-social">
+                <li><a href="https://www.linkedin.com/in/joel-abin" target="_blank" class="footer-social-link"><i
+                            class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://github.com/lavatoz" target="_blank" class="footer-social-link"><i
+                            class="fab fa-github"></i></a></li>
+                <li><a href="https://tryhackme.com/p/joelabin854796" target="_blank" class="footer-social-link"><i
+                            class="fas fa-terminal"></i></a></li>
+            </ul>
+            <p class="footer-copy">&#169; 2026 Joel Abin. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
